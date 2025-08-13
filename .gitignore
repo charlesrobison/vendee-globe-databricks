@@ -1,1 +1,81 @@
+# -------------------
+# Python
+# -------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+*/venv/
+.venv/
+*/.venv/
+env/
+*/env/
 vendee_env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+.cache
+pytest_cache/
+
+# Logs
+*.log
+
+# -------------------
+# Environment & Config
+# -------------------
+.env
+.env.*
+*.secret
+*.key
+*.pem
+*.crt
+*.p12
+
+# -------------------
+# Databricks / Airflow
+# -------------------
+# Databricks local files
+.dbc
+.databricks/
+databricks_notebooks/
+
+# Airflow
+airflow.cfg
+airflow.db
+unittests.cfg
+webserver_config.py
+logs/
+
+# -------------------
+# Jupyter Notebooks
+# -------------------
+.ipynb_checkpoints
+*.ipynb
+
+# -------------------
+# IDE & Editor
+# -------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------
+# OS Files
+# -------------------
+.DS_Store
+Thumbs.db
