@@ -51,7 +51,6 @@ pytest_cache/
 # Databricks local files
 .dbc
 .databricks/
-databricks_notebooks/
 
 # Airflow
 airflow.cfg
@@ -79,3 +78,8 @@ logs/
 # -------------------
 .DS_Store
 Thumbs.db
+
+# -------------------
+# Data Files
+# -------------------
+data/
