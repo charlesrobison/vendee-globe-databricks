@@ -1,6 +1,11 @@
 from prefect import flow, task
 import subprocess
 
+
+@task
+def fetch_task():
+    subprocess.run(["python", "scripts/fetch_vendee_data.py"], check=True)
+
 @task
 def bronze():
     subprocess.run(["python", "databricks_notebooks/01_bronze_ingest.py"])
@@ -15,6 +20,7 @@ def gold():
 
 @flow
 def vendee_pipeline():
+    fetch_task()
     bronze()
     silver()
     gold()
